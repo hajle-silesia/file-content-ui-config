@@ -41,12 +41,12 @@ spec:
             - name: ME_CONFIG_MONGODB_ADMINUSERNAME
               valueFrom:
                 secretKeyRef:
-                  name: file-content-secret
+                  name: file-content
                   key: file-content-root-username
             - name: ME_CONFIG_MONGODB_ADMINPASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: file-content-secret
+                  name: file-content
                   key: file-content-root-password
             - name: ME_CONFIG_MONGODB_SERVER
               value: file-content

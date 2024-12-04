@@ -50,8 +50,8 @@ spec:
                   key: file-content-root-password
             - name: ME_CONFIG_MONGODB_ENABLE_ADMIN
               value: "true"
-            - name: ME_CONFIG_MONGODB_SERVER
-              value: file-content
+            - name: ME_CONFIG_MONGODB_URL
+              value: mongodb://file-content:80
             - name: ME_CONFIG_MONGODB_PORT
               value: "80"
           livenessProbe:
